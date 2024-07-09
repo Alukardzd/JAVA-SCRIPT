@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+
+    <script>
+        function minhaFunção() {
+            document.getElementById('demo0').innerHTML = 'Paragrafo trocado.';
+        }
+    </script>
+    <script src="meuScript.js"></script>
+</head>
+<body>
+    <h2>Demo JavaScript no Head</h2>
+
+    <p id="demo0">Um Paragrafo</p>
+    <button type="buttom" onclick="minhaFunção()">Tente isso</button>
+<b></b>
+
+
+    <h2>Demo JavaScript no corpo</h2>
+
+    <p id="demo1">Um paragrafo</p>
+
+    <button type="buttom" onclick="minhaFunção2()">Tente isso</button>
+
+    <script>
+        function minhaFunção2() {
+            document.getElementById('demo1').innerHTML = 'Paragrafo Trocado';
+        }
+    </script>
+<b></b>
+
+    <h2>Demo JavaScript  em arquivo separado</h2>
+
+    <p id="demo2">Um paragrafo</p>
+
+    <button type="buttom" onclick="minhaFunção3()">Tente isso</button>
+
+    
+</body>
+</html>

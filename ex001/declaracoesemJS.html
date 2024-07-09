@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Java Script Statements (Declarações)</h2>
+
+    <p id="demo1"></p>
+
+    <script>
+        let x, y ,z;
+        x = 5;
+        y = 6;
+        z = x + y;
+
+        document.getElementById('demo1').innerHTML = 'O valor de z é ' + z + ',';
+    </script>
+
+    <h2>Next</h2>
+
+    <button type="button" onclick="myFunction()">botao</button>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        function myFunction() {
+            document.getElementById('demo2').innerHTML = 'Olá Majestade!';
+            document.getElementById('demo3').innerHTML = 'Como o senhor está?';
+        }
+    </script>
+</body>
+</html>

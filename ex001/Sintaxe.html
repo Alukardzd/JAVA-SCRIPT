@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaxe JS</title>
+</head>
+<body>
+    <h2>Expressões computando valores</h2>
+    <p id="demo1"></p>
+    <script>
+        document.getElementById('demo1').innerHTML = 'John' +  ' ' + 'Doe.'
+    </script>
+
+    <h2>Criando variaveis com 'let' E 'var'</h2>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        let x, y;
+        x = 5 + 6;
+        y = x * 10;
+
+        document.getElementById('demo2').innerHTML = 'x é igual a ' + x;
+        document.getElementById('demo3').innerHTML = 'y é igual a ' + y;
+    </script>
+
+    <h2>Variaveis</h2>
+    <p id="demo4"></p>
+    <script>
+        let carName = 'Volvo'
+        document.getElementById('demo4').innerHTML = carName;
+    </script>
+
+    <h2>Variaveis com const</h2>
+    <p id="demo5"></p>
+
+    <script>
+        const cars = ["Saab", "Volvo", "BMW"];
+        cars[0] = "Toyota";
+        cars.push("Audi");
+
+        document.getElementById('demo5').innerHTML = cars;
+    </script>
+
+    <h2>Alterando as propriedades de um objeto constante</h2>
+    <p id="demo6"></p>
+    <script>
+        const car = {type:"Fiat", model:"500", color:"white"};
+        car.color = "red";
+        car.owner = "Johnson";
+
+        document.getElementById("demo6").innerHTML = "O carro é de " + car.owner + " E a cor dele é " + car.color;
+    </script>
+
+    <h2>Let</h2>
+    <p id="demo7"></p>
+
+    <script>
+        {
+            let numb = 9;
+            numb = 200;
+            
+        
+
+        document.getElementById('demo7').innerHTML = numb;
+        }
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+
+        <label for="idade">Idade</label>
+        <input type="number" id="idade">
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {event.preventDefault();
+
+            let nome = document.getElmeentById("nome").value;
+            let idade = document.getElementById("idade").value;
+
+            document.getElementById("dados").innerHTML = nome + idade;
+        })
+    </script>
+<p id="dados"></p>
+</body> 
+</html>

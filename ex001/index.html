@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript teste 1</title>
+</head>
+<body>
+    <h1>Alterando Valores com  JavaScript</h1>
+    <h2>O que o JavaScript pode fazer?</h2>
+    <p id="demo"> JavaScript com o HTML</p>
+    <button type="button" onclick = "document.getElementById('demo').innerHTML = 'Olá Mundo'">
+        Clique aqui!
+    </button>
+
+    <h2>Alterando Valores de Imagens</h2>
+    <p>Neste caso JavaScript altera o valor de um src (source) atribuido a uma imagem</p>
+    <button type="button" onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Ligar Lâmpada</button>
+    <img id="myImage"src="pic_bulboff.gif" alt="desligada">
+    <button type="button" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Desligar Lâmpada</button>
+
+    <h2>Alterando valor dos Estilos (CSS)</h2>
+    <p style="font-size: 16px;" id="font">Alterando valor do CSS com o JavaScript</p>
+    <button type="button" onclick="document.getElementById('font').style.fontSize='50px'">Aumentar!</button>
+    <button tupe="button" onclick="document.getElementById('font').style.fontSize='16px'">Diminuir</button>
+
+    <h2>Ocultando Elementos do HTML</h2>
+    <p id="elemento">exemplo de Elemento a ser ocultado</p>
+    <button type="buttom" onclick="document.getElementById('elemento').style.display='none'">
+        Clique aqui!
+    </button>
+    <h2>Mostrar Elementos com JS</h2>
+    <img id='image'src="image.jpg" alt="fotinha fofa" style="display: none;">
+    <button type="button" onclick="document.getElementById('image').style.display='block'">Mostrar</button>
+    <button type="button" onclick="document.getElementById('image').style.display='none'">Ocultar</button>
+
+    <h2>A tag "Script"</h2>
+
+    <h1 id="damm"></h1>
+    <script>
+        document.getElementById('damm').innerHTML = 'My Firts JavaScript'
+    </script>
+
+
+    
+</body>
+</html>
