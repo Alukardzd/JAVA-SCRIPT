@@ -1,5 +1,5 @@
 c = 1
 while(c <= 6) {
-    console.log('oi')
+    console.log(`Passo ${c}`)
     c++
 }
