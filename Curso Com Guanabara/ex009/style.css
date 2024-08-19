@@ -6,6 +6,11 @@ body {
     font-size: 15pt;
 }
 
+header {
+    text-align: center;
+    color: white;
+}
+
 section {
     margin: auto;
     background-color: white;
@@ -19,11 +24,19 @@ footer {
     height: 100vh;
     display: flex;
     flex-flow: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
 
     color: white;
     text-align: center;
     font-style: italic;
     box-sizing: border-box;
+}
+
+#msg {
+    text-align: center;
+}
+
+#imagem {
+    text-align: center;
 }
