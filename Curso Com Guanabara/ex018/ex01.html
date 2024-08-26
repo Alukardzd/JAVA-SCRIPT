@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando a inserção de elementos</h1>
+    <p>Adicionando paragrafo em uma div container.</p>
+    <div id="container"></div>
+
+
+    <script>
+        let container = document.getElementById('container')
+        let paragrafo = document.createElement('p')
+        let conteudo = document.createTextNode('ISTO FOI ADICIONADO DE FORMA DINÂMICA!')
+        console.log(paragrafo)
+        console.log(conteudo)
+        paragrafo.appendChild(conteudo)
+        console.log(paragrafo)
+        container.appendChild(paragrafo)
+    </script>
+</body>
+</html>
