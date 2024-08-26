@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Criando Objeto com 'new'</h2>
+    <p id="demo"></p>
+
+    <script>
+        const person = new Object()
+        person.firstName = 'John'
+        person.age = 50
+        person.lastName = 'Kilter'
+        person.eyeColor = 'Blue'
+
+        document.querySelector('#demo').innerHTML = `A idade da pessoa é de ${person.age} anos`
+    </script>
+</body>
+</html>

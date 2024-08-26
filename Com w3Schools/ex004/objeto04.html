@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Objetos são mutáveis</h2>
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName: 'John',
+            lastName: 'Kilter',
+            age: 50,
+            eyeColor: 'Blue'    
+        }
+        let x = person
+            x.age = 22
+        document.getElementById('demo').innerHTML = `A idade de ${x.firstName} é ${x.age} anos`
+    </script>
+</body>
+</html>

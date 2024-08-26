@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Métodos de objetos</h2>
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName: 'John',
+            lastName: 'Kilter',
+            id: 5566,
+            fullName: function() {
+                return `${this.firstName} ${this.lastName}`
+            }
+        } 
+
+        document.querySelector('#demo').innerHTML = person.fullName()
+        /*
+        let result = person.fullName()
+        document.getElementById("demo").innerHTML = result
+        */
+    </script>
+</body>
+</html>
