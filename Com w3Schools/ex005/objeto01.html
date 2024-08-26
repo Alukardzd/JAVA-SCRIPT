@@ -6,6 +6,37 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h2>Adicionando Prorpredades a objetos!</h2>
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            fName: 'John',
+            lName: 'Kilter',
+            age: 50,
+            eyeColor: 'Blue'
+        }
+        person.nationality = 'British'
+
+        document.querySelector('#demo').innerHTML = `${person.fName} é ${person.nationality}`
+    </script>
+
+
+
+
+
+
+    <h2>Deletando Propriedades do Objeto!</h2>
+    <p id="demo2"></p>
+
+    <script>
+        const pessoa = {
+            nome: 'Guilherme',
+            idade: 18,
+            corOlhos: 'Pretos'
+        }
+        delete pessoa.corOlhos
+        document.getElementById('demo2').innerHTML = `${pessoa.nome} tem olhos ${pessoa.corOlhos}`
+    </script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Objetos Aninhados</h2>
+    <p class="demo"></p>
+
+    <script>
+        const person = {
+            name: 'John',
+            age: 40,
+            cars: {
+                car1: 'FordGT',
+                car2: 'BMW',
+                car3: 'Volvo'
+            }
+        }
+        document.querySelector('.demo').innerHTML = `O carro de ${person.name} é  um ${person.cars.car1}.`
+    </script>
+</body>
+</html>
