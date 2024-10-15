@@ -1,13 +1,12 @@
-let items = ''
+let items = 'jose'
 const history = ['pedro', 'joao', 'maria', 'gabriel', 'marcos'];
 const max_history = 5;
 
 
-function historicROT(){
-    if(history !== ''){
-        history.unshift(items)
-    }else {
-        history.pop()
-    }
+if(history.length <= 5) {
+    history.unshift(items)
 }
-console.log (historicROT())
+if (history.length > 5) {
+    history.pop()
+}
+console.log (history)
