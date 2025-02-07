@@ -10,7 +10,8 @@ for(r of respostas){
         frequencia[r] = 1
     }
 }
-console.log (frequencia)
+console.log(frequencia)
+
 
 
 
